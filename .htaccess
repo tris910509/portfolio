@@ -5,10 +5,6 @@ RewriteCond %{REQUEST_FILENAME}.html !-f
 RewriteRule ^(.*)$ $1.html
 
 
-RewriteRule ^about/$    /about.html [L]
-RewriteRule ^contact/$ /contact.html[L]
-RewriteRule ^jurnal/$      /jurnal.html [L]
-RewriteRule ^hki/$  /hki.html [L]
-RewriteRule ^profil/$  /profil.html [L]
+
 
 </IfModule>
