@@ -22,14 +22,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas__menu__overlay"></div>
+<body id="home">
     <div class="offcanvas__menu__wrapper">
         <div class="canvas__close">
             <span class="fa fa-times-circle-o"></span>
@@ -39,22 +32,17 @@
         </div>
         <nav class="offcanvas__menu mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                    <li><a href="./profil.html">Profil</a></li>
-                        <li><a href="#">Pendidikan</a>
-                                <ul class="dropdown">
-                                    <li><a href="./jurnal.html">Jurnal</a></li>
-                                    <li><a href="./hki.html">HKI</a></li>
-                                </ul>
-                        </li>
-                    <li><a href="./contact.html">Contact</a></li>
+                <li ><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#info">Info</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__info">
             <ul>
-                <li><span class="icon_phone"></span> 081288422186</li>
-                <li><span class="fa fa-envelope"></span> tristiantopradita28@gmail.com</li>
+                <li><span class="icon_phone"></span>081288422186</li>
+                <li><span class="fa fa-envelope"></span>tristiantopradita28@gmail.com</li>
             </ul>
         </div>
     </div>
@@ -62,42 +50,22 @@
 
     <!-- Header Section Begin -->
     <header class="header-section">
-        <div class="header__info">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="header__info-left">
-                            <ul>
-                                <li><span class="icon_phone"></span> 081288422186</li>
-                                <li><span class="fa fa-envelope"><a href=""></a></span> tristiantopradita28@gmail.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo TP.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-9">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./profil.html">Profil</a></li>
-                            <li><a href="#">Pendidikan</a>
-                                <ul class="dropdown">
-                                    <li><a href="./jurnal.html">Jurnal</a></li>
-                                    <li><a href="./hki.html">HKI</a></li>
+                <nav class="header__menu fixed-top"style="background-color: #120851;">
+                    <div class="col-lg-9 col-md-9">
+                        <div class="container">
+                            <div class="row">
+                                <ul><a href="./index.html"><img src="img/logo TP.png" alt=""></a>
+                                    <li ><a href="#home">Home</a></li>
+                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    <li><a href="#project">Project</a></li>
+                                    <li><a href="#info">Info</a></li>
                                 </ul>
-                            </li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                            </div>
+                        </div>
+                    </div><br>
+                 </nav>
             </div>
             <div class="canvas__open">
                 <span class="fa fa-bars"></span>
@@ -114,8 +82,8 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="hero__text">
-                                <h2>Selamat datang<br /> pada halaman portfolio Tristianto Pradita</h2>
-                                <a href="contact.html" class="primary-btn">Contact</a>
+                                <h2>Selamat datang<br /> pada halaman Portfolio Tristianto Pradita</h2>
+                                <a href="#contact"  class="primary-btn">Contact</a>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -130,19 +98,17 @@
     </section>
     <!-- Hero Section End -->
 
-
-
     <!-- Register Domain Section Begin -->
-    <section class="register-domain spad">
+    <section class="register-domain spad" id="about">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-12">
                     <div class="register__text">
                         <div class="section-title">
-                            <h3>About!</h3>
+                            <h3>Tentang</h3>
                         </div>
                         <p class="row d-flex justify-content-center">
-                        Seiringnya waktu berjalan perkembangan teknologi informasi sangat pesat. Dengan adanya sistem informasi dari pelayanan, informasi-informasi dan data menjadi sumber utama yang akan menjadi laporan yang di inginkan. Maka dari itu Big Data menjadi sebuah solusi diperlukan, kesimpulanya semakin data yang diperoleh semakin banyak jumlah data sangat besar yang akan menjadi sebuah hasil laporan yang di inginkan</p>
+                        Saya TRISTIANTO PRADITA yang bertujuan untuk Melamar pekerjaan pada bagian Teknologi Informasi (TI). Pendidikan terakhir yang saya miliki Strata 1 ( S1) di Falkutas Teknologi Informasi dengan prodi sistem informasi pada perguruan tinggi Universitas Adhirajasa Reswara Sanjaya Kota Bandung. Mulai tahun 2016 dan lulus pada tahun 2020.</p>
                     </div>
                 </div>
             </div>
@@ -150,10 +116,76 @@
     </section>
     <!-- Register Domain Section End -->
 
-    <section class="blog-section spad">
+
+    <div class="feature-section spad" id="portfolio">
+        <div class="container">
+           <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>Portfolio</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <img src="./img/portfolio/tp1.jpg">
+                        <h5>Sidang Skripsi</h5>
+                        <p>11 September 2020</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <img src="./img/portfolio/tp2.jpg">
+                        <h5>Kelulusan Skripsi</h5>
+                        <p>11 Desember 2020</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <img src="./img/portfolio/tp3.jpg">
+                        <h5>Wisuda</h5>
+                        <p>11 Desember 2020</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <img src="./img/portfolio/tp4.png">
+                        <h5>Tasik</h5>
+                        <p>2015</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <img src="./img/portfolio/tp5.jpg">
+                        <h5>Babakan Siliwang</h5>
+                        <p>2016</p>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="feature__item">
+                        <img src="./img/portfolio/tp6.jpg">
+                        <h5>Babakan Siliwangi</h5>
+                        <p>2016</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="blog-section spad" id="project">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>Project</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-6">
                             <div class="blog__item">
@@ -184,16 +216,139 @@
                                 </div>
                             </div>
                         </div>
-                        
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section><br><br><br><br><br><br>
+    </section>
+<hr>
+    <!-- About Section Begin -->
+    <section class="about-section spad" id="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3>INFO</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__img">
+                        <img src="img/about-us.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <h2>Tristianto Pradita</h2>
+                        <p>Saya TRISTIANTO PRADITA yang bertujuan untuk Melamar pekerjaan pada bagian Teknologi Informasi (TI). Pendidikan terakhir yang saya miliki Strata 1 ( S1) di Falkutas Teknologi Informasi dengan prodi sistem informasi pada perguruan tinggi Universitas Adhirajasa Reswara Sanjaya Kota Bandung. Mulai tahun 2016 dan lulus pada tahun 2020.</p>
+                        <div class="about__text">
+                            <h4>Judul Skripsi : Sistem Informasi Pelayanan Jasa pada Lucky Photo dengan Framework Laravel</h4><br>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <table class=" table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Mulai Kuliah</th>
+                                        <th>Sidang Skripsi</th>
+                                        <th>Tahun Kelulusan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>September 2016</td>
+                                        <td>September 2020</td>
+                                        <td>Desember 2020</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <td>
+                            <a href="./img/CvTristiantoPradita.pdf" target="_blank" class="primary-btn">Curriculum Vitae</a>
+                        </td>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="contact-section spad" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="contact__text">
+                        <h3>Contact info</h3>
+                        <ul>
+                            <li>
+                                <span class="fa fa-map-marker"></span>
+                                <h5>Alamat</h5>
+                                <p>Jalan babakan Ciparay Gg.Misbah Rt.012 Rw.002<br>Kelurahan Sukahaji Kecamatan Babakan Ciparay<br>Kota Bandung 40221</p>
+                            </li>
+                            <li>
+                                <span class="fa fa-mobile"></span>
+                                <h5>No Handphone/Whatsapp : </h5>
+                                <p>081288422186</p>
+                            </li>
+                            <li>
+                                <span class="fa fa-envelope"></span>
+                                <h5>Email: </h5>
+                                <p>tristiantopradita28@gmail.com</p>
+                            </li>
+                        </ul>
+                        <div class="contact__social">
+                            <a href="https://www.instagram.com/tris_pradita?r=nametag" target="_blank"><img src="./img/instragram.png"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=6281288422186&text=Terima%20kasih%20telah%20menghubungi%20T%20Pradita" target="_blank"><img src="./img/whatsapp.png"></a>
+                            <a href=" mailto:tristiantopradita28@gmail.com " target="_blank"><img src="./img/gmail.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.657555102672!2d107.5810623140327!3d-6.931470794991906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e90987bba009%3A0x2576c33163a99d87!2sLapang%20Sawah%20Luhur!5e0!3m2!1sen!2sid!4v1615352005377!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="contact-form spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Kirim Pesan</h3>
+                    <div class="alert alert-success alert-pesan alert-dismissible fade show d-none" role="alert">
+  <strong>Terimakasih!</strong> Pesan anda sudah saya terima.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+                    <form name="PesanPortfolio">
+                        <div class="input-list">
+                            <input type="text" id="nama" placeholder="Masukan Nama"  name="nama" required="">
+                            <input type="text" id="email" placeholder="Masukan Email" name="email" required="">
+                        </div>
+                        <textarea rows="10" name="pesan" placeholder="Masukan Pesan"></textarea>
+                        <button type="submit"  class="site-btn btn-kirim">Kirim Pesan</button>
+
+                        <button class="site-btn btn-loading d-none" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br>
 
     <!-- Footer Section Begin -->
-    <footer class="footer-section"><br><br><br><br><br><br><br><br>
+    <footer class="footer-section">
         <div class="footer__text set-bg" data-setbg="img/footer-bg.png">
             <div class="container">
                 <div class="row">
@@ -247,6 +402,32 @@
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyB6H5tMETgECvYgbkrqVhkXMvBKAkL-OxegEHG9_8nHTa2uM0n9bo9ENCmSiegLEA/exec'
+  const form = document.forms['PesanPortfolio'];
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const alertPesan = document.querySelector('.alert-pesan');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+
+        alertPesan.classList.toggle('d-none');
+        form.reset();
+
+        console.log('Success!', response)
+    })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
