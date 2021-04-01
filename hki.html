@@ -23,6 +23,13 @@
 </head>
 
 <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas__menu__overlay"></div>
     <div class="offcanvas__menu__wrapper">
         <div class="canvas__close">
             <span class="fa fa-times-circle-o"></span>
@@ -32,18 +39,22 @@
         </div>
         <nav class="offcanvas__menu mobile-menu">
             <ul>
-                
-                            <li ><a href="#home">Home</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#project">Project</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./profil.html">Profil</a></li>
+                        <li><a href="#">Pendidikan</a>
+                                <ul class="dropdown">
+                                    <li><a href="./jurnal.html">Jurnal</a></li>
+                                    <li><a href="./hki.html">HKI</a></li>
+                                </ul>
+                        </li>
+                    <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__info">
             <ul>
-                <li><span class="icon_phone"></span> (022) 6041155</li>
-                <li><span class="fa fa-envelope"></span>tristiantopradita28@gmail.com</li>
+                <li><span class="icon_phone"></span> 081288422186</li>
+                <li><span class="fa fa-envelope"></span> tristiantopradita28@gmail.com</li>
             </ul>
         </div>
     </div>
@@ -51,19 +62,42 @@
 
     <!-- Header Section Begin -->
     <header class="header-section">
+        <div class="header__info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__info-left">
+                            <ul>
+                                <li><span class="icon_phone"></span> 081288422186</li>
+                                <li><span class="fa fa-envelope"><a href=""></a></span> tristiantopradita28@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
-                <nav class="header__menu fixed-top"style="background-color: #120851;">
-                    <div class="col-lg-9 col-md-9">
-                        <div class="container">
-                            <div class="row">
-                                <ul><a href="./index.html"><img src="img/logo TP.png" alt=""></a>
-                                    <li ><a href="index.html">Home</a></li>
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo TP.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./profil.html">Profil</a></li>
+                            <li><a href="#">Pendidikan</a>
+                                <ul class="dropdown">
+                                    <li><a href="./jurnal.html">Jurnal</a></li>
+                                    <li><a href="./hki.html">HKI</a></li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div><br>
-                 </nav>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div class="canvas__open">
                 <span class="fa fa-bars"></span>
