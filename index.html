@@ -313,39 +313,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-    <div class="contact-form spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3>Kirim Pesan</h3>
-                    <div class="alert alert-success alert-pesan alert-dismissible fade show d-none" role="alert">
-  <strong>Terimakasih!</strong> Pesan anda sudah saya terima.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-                    <form name="PesanPortfolio">
-                        <div class="input-list">
-                            <input type="text" id="nama" placeholder="Masukan Nama"  name="nama" required="">
-                            <input type="text" id="email" placeholder="Masukan Email" name="email" required="">
-                        </div>
-                        <textarea rows="10" name="pesan" placeholder="Masukan Pesan"></textarea>
-                        <button type="submit"  class="site-btn btn-kirim">Kirim Pesan</button>
-
-                        <button class="site-btn btn-loading d-none" type="button" disabled>
-  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  Loading...
-</button>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div><br><br><br><br><br><br>
+    </section><br><br><br><br><br><br>
 
     <!-- Footer Section Begin -->
     <footer class="footer-section">
@@ -402,32 +370,6 @@
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
- <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyB6H5tMETgECvYgbkrqVhkXMvBKAkL-OxegEHG9_8nHTa2uM0n9bo9ENCmSiegLEA/exec'
-  const form = document.forms['PesanPortfolio'];
-  const btnKirim = document.querySelector('.btn-kirim');
-  const btnLoading = document.querySelector('.btn-loading');
-  const alertPesan = document.querySelector('.alert-pesan');
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    btnLoading.classList.toggle('d-none');
-    btnKirim.classList.toggle('d-none');
-
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
-
-        alertPesan.classList.toggle('d-none');
-        form.reset();
-
-        console.log('Success!', response)
-    })
       .catch(error => console.error('Error!', error.message))
   })
 </script>
